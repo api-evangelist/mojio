@@ -1,7 +1,29 @@
 aid: mojio
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mojio.png
 name: Moj.io
-description: Moj.io is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Mojio (moj.io) is a connected-car and connected-mobility platform that
+  collects, processes, and monetizes vehicle telematics data at scale for mobile
+  network operators, automotive OEMs, insurers, and fleet/field-service
+  businesses. Its "Mobility Studio" platform exposes REST endpoints for vehicle
+  data, a PUSH API for real-time insights, mobile SDKs, and a vehicle simulator,
+  alongside a white-label consumer app (Motion) and a services ecosystem
+  (Alexa, Google Maps, Bosch, and others). Mojio has processed 15+ billion miles
+  of driving data. As of this pass the API and SDK surface is partner-gated —
+  there is no public developer portal, published OpenAPI specification, or
+  self-serve API documentation. Surfaced as a 500 Global portfolio company and
+  added to the API Evangelist network for enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/mojio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +33,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Connected Car
+- Telematics
+- Mobility
+- Automotive
+- Fleet Management
+- Vehicle Data
+- IoT
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +50,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/mojio-domain-security.yml
 - type: Website
   url: https://moj.io
+- type: Platform
+  url: https://moj.io/connected-car-platform/
+- type: Support
+  url: https://moj.io/support/
+- type: Blog
+  url: https://moj.io/blog/
+- type: TermsOfService
+  url: https://www.moj.io/terms/
+- type: PrivacyPolicy
+  url: https://www.moj.io/privacy/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
